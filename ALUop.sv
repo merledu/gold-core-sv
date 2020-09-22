@@ -1,5 +1,5 @@
-module ALUop(input logic r_type_i,i_type_i,store_i,branch_i, load_i,jalr_i, jal_i, lui_i,output logic (2:0) aluop_o);
-always @ ( r_type_i,i_type_i,store_i,branch_i, load_i,jalr_i, jal_i, lui_i)
+module ALUop(input logic r_type_i,i_type_i,store_i,branch_i,load_i,jalr_i,jal_i,lui_i, output logic [2:0] aluop_o);
+always_comb
 begin
 if (r_type_i==1) 
 	aluop_o=000;
