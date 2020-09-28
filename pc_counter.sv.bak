@@ -29,7 +29,7 @@ case (opcode_i)
 	begin
 	pc_o = pc_o + uj_imm; end
 	default : begin 
-	pc_o <= pc_o + 4; end
+	pc_o = pc_o + 4; end
 endcase
 end
 endmodule
