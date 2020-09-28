@@ -3,7 +3,6 @@ module mux_2_1(
 	input logic sel_i,
 	output logic [31:0] out_o	
 );
-
 always_comb begin
 	if(sel_i == 0) begin
 		out_o = in1_i;
