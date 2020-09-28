@@ -101,7 +101,7 @@ else if(aluc_i == 5'b11111)	//JAL,JALR
 else begin 
 	C_o = 32'bxxxxx;
 end
-assign branch_o = ((branch2_o == 2'b10) && (C_o == 1))? 1'b1: 1'b0; 
+assign branch_o = ((branch2_o == 2'b10) && (C_o==1))? 1'b1: 1'b0; 
 
 end
 

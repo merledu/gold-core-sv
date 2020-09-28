@@ -20,7 +20,7 @@ begin
 	I_type = instruction[31:20];
 	U_type = instruction[31:12];
 	S_type = {instruction[31:25],instruction[11:7]};
-	SB_type = {instruction[31],instruction[7],instruction[30:25],instruction[11:8],1'b0};
+	SB_type = {instruction[31],instructuin[7],instruction[30:25],instruction[11:8],1'b0};
 	UJ_type = {instruction[31],instruction[19:12],instruction[20],instruction[30:21],1'b0};
 
 	u_imm = {U_type ,12'b0 };

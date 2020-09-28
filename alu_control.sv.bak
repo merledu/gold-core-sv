@@ -86,8 +86,7 @@ else if(aluop_i == 3'b100 | aluop_i == 3'b101 | aluop_i == 3'b110)
 	begin
 	if(func3_i == 3'b000) begin 
 	aluc_o=5'b00000;
-	end
-	else begin
+	else
 	aluc_o=5'b00000;
 	end
 	end

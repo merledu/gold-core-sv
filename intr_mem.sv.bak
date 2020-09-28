@@ -1,0 +1,16 @@
+module instr_mem(
+	input logic ren,
+	input logic [19:0] addr,
+	output logic [31:0] data_o
+);
+
+logic [31:0] mem[0:1048576];
+	always_comb begin
+	if(ren == 1) begin
+		data_o <= mem[addr];	
+	end
+	else begin
+		data_o <= 32'bx;
+	end
+	end
+endmodule 
